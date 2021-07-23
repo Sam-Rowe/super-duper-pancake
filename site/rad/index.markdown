@@ -10,3 +10,14 @@ A RAD idea
 No need to worry about what it means
 
 just putting stuff in
+
+{% include button.html %}
+
+<!-- {% raw %}
+<script>
+
+    const button = document.querySelector('#myButton');
+    const bsButton = new mdb.Button(button);
+
+</script>
+{% endraw %} -->

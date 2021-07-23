@@ -1,0 +1,44 @@
+<script>
+
+    // On page_load run the function add_button
+
+    // $(document).ready(function() {
+    //     add_button();
+    // });
+
+    // Function add_button
+    // ------------------
+    // Add a button to the page
+    function add_button() {
+        // const button = document.querySelector('#myButton');
+        // const bsButton = new mdb.Button(button);
+        var node = document.createElement("img");
+
+        animal_image = "https://images.dog.ceo/breeds/terrier-dandie/n02096437_2603.jpg"
+        // get a response from /api/get_animal
+        // If it has a message use that message as the url for animal image
+        // otherwise use the default image
+        $.get("/api/get_animal", function(data) {
+            if (data.message) {
+                animal_image = data.message
+            }
+        })
+
+
+        node.setAttribute("src", animal_image);
+        here = document.getElementById("add_here");
+        here.appendChild(node);
+    }
+
+
+    
+    
+    // $(add_button() {
+    //     const button = document.querySelector('#myButton');
+    //     const bsButton = new mdb.Button(button);
+    // });
+
+
+</script>
+<body onload="add_button()"></body>
+<div id="add_here"></div>
