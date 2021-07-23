@@ -21,7 +21,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsof
 sudo apt-get update
 
 sudo apt-get update
-sudo apt-get install -y azure-functions-core-tools-3
+sudo apt-get install -y azure-functions-core-tools-3 
 
 wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
@@ -33,4 +33,4 @@ sudo apt-get update; \
   sudo apt-get install -y dotnet-sdk-5.0
 
 sudo apt install -y python3-pip
-sudo pip3 install pipenv
+pip3 install pipenv
