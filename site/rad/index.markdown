@@ -4,3 +4,9 @@
 
 layout: home
 ---
+
+A RAD idea
+
+No need to worry about what it means
+
+just putting stuff in
