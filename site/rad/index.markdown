@@ -11,7 +11,10 @@ No need to worry about what it means
 
 just putting stuff in
 
-{% include button.html %}
+<!-- {% capture api_url %}
+{{ site.api_url }}
+{% endcapture %} -->
+{% include button.html apiurl=site.api_url %}
 
 <!-- {% raw %}
 <script>

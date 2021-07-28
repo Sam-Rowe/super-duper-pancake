@@ -25,8 +25,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   I don't know what I want to demo yet
   But this is a start. Check out the _config.yml to change this desc
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-api_url: ""
+url: "https://01f82277-4fcb-488f-91a2-ef49dfbc1f40-4000.apps.codespaces.githubusercontent.com" # the base hostname & protocol for your site, e.g. http://example.com
+api_url: "https://01f82277-4fcb-488f-91a2-ef49dfbc1f40-7071.apps.codespaces.githubusercontent.com"
 twitter_username: sam_rowe
 github_username:  sam-rowe
 

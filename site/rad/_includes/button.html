@@ -1,6 +1,6 @@
 <script>
 
-    api_url = {{api_url}}
+
     // On page_load run the function add_button
 
     // $(document).ready(function() {
@@ -19,7 +19,7 @@
         // get a response from /api/get_animal
         // If it has a message use that message as the url for animal image
         // otherwise use the default image
-        $.get("/api/get_animal", function(data) {
+        $.get("{{ include.apiurl }}/api/get_animal", function(data) {
             if (data.message) {
                 animal_image = data.message
             }
@@ -43,3 +43,4 @@
 </script>
 <body onload="add_button()"></body>
 <div id="add_here"></div>
+<p>Link to api {{ include.apiurl }}</p>
