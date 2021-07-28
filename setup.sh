@@ -10,3 +10,4 @@ export base_url=`get-site-add`
 export api_url=`get-func-add`
 
 sed -i "s|^url: \".*\"|url: \"$base_url\"|g" /workspaces/$RepositoryName/site/rad/_config.codesapce.yml
+sed -i "s|^api_url: \".*\"|api_url: \"$api_url\"|g" /workspaces/$RepositoryName/site/rad/_config.codesapce.yml
