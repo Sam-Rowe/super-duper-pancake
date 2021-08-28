@@ -2,3 +2,5 @@
 
 azure-functions
 requests
+matplotlib
+numpy
