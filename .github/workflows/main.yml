@@ -1,4 +1,7 @@
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -10,4 +13,4 @@ jobs:
   
     steps:
       - name: MainEchoDefault
-        run: echo "Main branch version 1"
+        run: echo "PR 2"
