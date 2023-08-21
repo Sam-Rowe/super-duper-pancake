@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-      - name: MainEchoDefault
-        run: echo "Main branch version 1"
+      - name: Checkout repo
+        uses: actions/checkout@main
       - name: List repo contents
         run: |
           pwd
