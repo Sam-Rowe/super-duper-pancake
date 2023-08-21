@@ -11,3 +11,8 @@ jobs:
     steps:
       - name: MainEchoDefault
         run: echo "Main branch version 1"
+      - name: List repo contents
+        run: |
+          pwd
+          ls -lah
+          
